@@ -44,37 +44,105 @@
 
 .transaction-control {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid green;
+    margin-bottom: 40px;
 }
 
 .actions {
     display: flex;
     flex-direction: column;
+    box-shadow: var(--box-shawdow);
     border: 1px solid black;
-    padding: 20px 80px 20px 80px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0px 10px;
+    flex-grow: 1;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: underline solid #393e46 3px;
+    font-size: 24px;
+}
+
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 30px;
 }
 
 form input {
-    display: flex;
-    flex-direction: column;
-}
-
-.actions h3 {
-    text-align: center;
+    font-size: 18px;
+    padding: 5px;
 }
 
 .stats {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
+    box-shadow: var(--box-shawdow);
     border: 1px solid black;
-    padding: 20px 40px 20px 40px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+
+.stats p {
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px 20px;
+    box-shadow: var(--box-shawdow);
+    font-size: 18px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.stats p.balance {
+    background-color: #fff2dd92;
+    border-right: 10px solid #f6c065;
+}
+.stats p.income {
+    background-color: #e7fff1ad;
+    border-right: 10px solid #16c77a;
+}
+.stats p.expense {
+    background-color: #ffeef0bb;
+    border-right: 10px solid #eb596e;
+}
+
+.submit {
+    padding: 7px 15px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #2666cf;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: var(--box-shawdow);
 }
 
 .transaction-history {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    box-shadow: var(--box-shawdow);
+    border-radius: 10px;
     border: 1px solid red;
+    padding: 30px 0px;
+}
+
+.records {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+.records div {
+    border: 1px solid black;
 }
 
 .income {
@@ -82,6 +150,11 @@ form input {
     flex-direction: column;
     border: 1px solid black;
     padding: 20px 80px 20px 80px;
+    flex-grow: 1;
+}
+
+.expense-list ul.li {
+    border: 1px solid black;
 }
 
 .expense {
@@ -89,4 +162,15 @@ form input {
     flex-direction: column;
     border: 1px solid black;
     padding: 20px 80px 20px 80px;
+    flex-grow: 1;
+    border-left: 10px solid #2ecc71;
+}
+
+.income-list p span {
+    border: 1px solid;
+    margin-left: 20px;
+}
+.expense-list p span {
+    border: 1px solid;
+    margin-left: 20px;
 }

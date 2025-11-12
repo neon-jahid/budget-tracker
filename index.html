@@ -25,7 +25,7 @@
                     <section class="transaction-control">
                         <div class="actions">
                             <h3>Add Transaction</h3>
-                            <form>
+                            <form class="transaction-form">
                                 <input
                                     type="text"
                                     name="source"
@@ -36,45 +36,45 @@
                                     name="amount"
                                     placeholder="Amount"
                                     autocomplete="off" />
-                                <input
-                                    type="submit"
-                                    value="Add Transaction" />
+                                <button class="submit">Add Transaction</button>
                             </form>
                         </div>
                         <div class="stats">
                             <h3>Statistics</h3>
                             <p class="balance">Balance $<span id="balance">651</span></p>
-                            <p class="inocme">Income $<span id="income">700</span></p>
+                            <p class="income">Income $<span id="income">700</span></p>
                             <p class="expense">Expense $<span>50</span></p>
                         </div>
                     </section>
                     <section class="transaction-history">
                         <h3>Transaction history</h3>
-                        <div class="income">
-                            <h3>Income</h3>
-                            <ul class="income-list">
-                                <li data-id="">
-                                    <p>
-                                        <span>Freelancing js project</span>
-                                        <span>6:38 pm</span>
-                                    </p>
-                                    <span>700$</span>
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="expense">
-                            <h3>Expense</h3>
-                            <ul class="expense-list">
-                                <li data-id="">
-                                    <p>
-                                        <span>Streaming Room</span>
-                                        <span>6:38 pm</span>
-                                    </p>
-                                    <span>70$</span>
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </li>
-                            </ul>
+                        <div class="records">
+                            <div class="income">
+                                <h3>Income</h3>
+                                <ul class="income-list">
+                                    <li data-id="">
+                                        <p>
+                                            <span>Freelancing js project</span>
+                                            <span>6:38 pm</span>
+                                            <span>700$</span>
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="expense">
+                                <h3>Expense</h3>
+                                <ul class="expense-list">
+                                    <li data-id="">
+                                        <p>
+                                            <span>Streaming Room</span>
+                                            <span>6:38 pm</span>
+                                            <span>70$</span>
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </section>
                 </div>
