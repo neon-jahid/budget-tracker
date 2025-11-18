@@ -174,3 +174,7 @@ form input {
     border: 1px solid;
     margin-left: 20px;
 }
+
+.expense-list li p .icon {
+    margin-left: 20px;
+}
